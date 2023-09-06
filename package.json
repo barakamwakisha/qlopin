@@ -1,0 +1,20 @@
+{
+  "name": "qlopin",
+  "version": "0.0.1",
+  "description": "An opinionated GraphQL utility package that streamlines development, putting conventions over code and reducing boilerplate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["graphql", "opinionated", "conventions", "utility", "boilerplate", "codegen"],
+  "author": "Baraka Mwakisha <baraka@gyrofms.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barakamwakisha/qlopin"
+  },
+  "bugs": {
+    "url": "https://github.com/barakamwakisha/qlopin/issues"
+  },
+  "homepage": "https://github.com/barakamwakisha/qlopin#readme"
+}
