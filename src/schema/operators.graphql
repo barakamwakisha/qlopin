@@ -1,0 +1,91 @@
+"Operators for filtering on a String field"
+input StringOperators {
+    eq: String
+    notEq: String
+    contains: String
+    notContains: String
+    in: [String!]
+    notIn: [String!]
+    regex: String
+    isNull: Boolean
+}
+
+input NumberRange {
+    start: Float!
+    end: Float!
+}
+
+"Operators for filtering on a Int or Float field"
+input NumberOperators {
+    eq: Float
+    lt: Float
+    lte: Float
+    gt: Float
+    gte: Float
+    between: NumberRange
+    isNull: Boolean
+}
+
+"Operators for filtering on a Boolean field"
+input BooleanOperators {
+    eq: Boolean
+    isNull: Boolean
+}
+
+"Operators for filtering on an ID field"
+input IDOperators {
+    eq: String
+    notEq: String
+    in: [String!]
+    notIn: [String!]
+    isNull: Boolean
+}
+
+input DateRange {
+    start: DateTime!
+    end: DateTime!
+}
+
+"Operators for filtering on a DateTime field"
+input DateOperators {
+    eq: DateTime
+    before: DateTime
+    after: DateTime
+    between: DateRange
+    isNull: Boolean
+}
+
+"Operators for filtering on a list of String fields"
+input StringListOperators {
+    inList: String!
+}
+
+"Operators for filtering on a list of Number fields"
+input NumberListOperators {
+    inList: Float!
+}
+
+"Operators for filtering on a list of Boolean fields"
+input BooleanListOperators {
+    inList: Boolean!
+}
+
+"Operators for filtering on a list of ID fields"
+input IDListOperators {
+    inList: ID!
+}
+
+"Operators for filtering on a list of Date fields"
+input DateListOperators {
+    inList: DateTime!
+}
+
+enum SortOrder {
+    ASC
+    DESC
+}
+
+enum LogicalOperator {
+    AND
+    OR
+}

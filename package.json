@@ -1,6 +1,6 @@
 {
   "name": "@barakamwakisha/qlopin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "description": "An opinionated GraphQL utility package that hastens development, putting conventions over code and reducing boilerplate.",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "ci": "pnpm lint && pnpm test && pnpm build",
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts",
     "lint": "tsc",
     "test": "vitest run",
     "release": "changeset publish"
@@ -36,6 +36,13 @@
     "@types/node": "^20.5.9",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
+    "vite": "^4.4.9",
     "vitest": "^0.34.3"
+  },
+  "dependencies": {
+    "@graphql-tools/stitch": "^9.0.1",
+    "graphql": "^16.8.0",
+    "@graphql-tools/graphql-file-loader": "^8.0.0",
+    "@graphql-tools/load": "^8.0.0"
   }
 }
