@@ -6,24 +6,13 @@ import { generateErrorCodeEnum } from './generate-error-code-enum';
 
 export type QlopinOptions = {
     typeDefs: string;
-} | {
-    typeDefsLoader: () => Promise<string>;
 }
 
-export async function buildQlopinSchema(options: QlopinOptions): Promise<GraphQLSchema> {
-    let qlopinSchema: GraphQLSchema;
-
-    if ('typeDefs' in options) {
-        qlopinSchema = buildSchema(`
-            ${printSchema(getCommonTypesSchema())}
-            ${options.typeDefs}
-        `);
-    } else {
-        qlopinSchema = buildSchema(`
-            ${printSchema(getCommonTypesSchema())}
-            ${await options.typeDefsLoader()}
-        `);
-    }
+export function buildQlopinSchema(options: QlopinOptions): GraphQLSchema {
+    let qlopinSchema = buildSchema(`
+        ${printSchema(getCommonTypesSchema())}
+        ${options.typeDefs}
+    `);
 
     qlopinSchema = generateListOptions(qlopinSchema);
     qlopinSchema = generateErrorCodeEnum(qlopinSchema);
