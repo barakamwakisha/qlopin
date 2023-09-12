@@ -11,6 +11,12 @@ dependencies:
   '@graphql-tools/load':
     specifier: ^8.0.0
     version: 8.0.0(graphql@16.8.0)
+  '@graphql-tools/load-files':
+    specifier: ^7.0.0
+    version: 7.0.0(graphql@16.8.0)
+  '@graphql-tools/merge':
+    specifier: ^9.0.0
+    version: 9.0.0(graphql@16.8.0)
   '@graphql-tools/stitch':
     specifier: ^9.0.1
     version: 9.0.1(graphql@16.8.0)
@@ -531,6 +537,18 @@ packages:
       graphql: 16.8.0
       resolve-from: 5.0.0
       tslib: 2.6.2
+    dev: false
+
+  /@graphql-tools/load-files@7.0.0(graphql@16.8.0):
+    resolution: {integrity: sha512-P98amERIwI7FD8Bsq6xUbz9Mj63W8qucfrE/WQjad5jFMZYdFFt46a99FFdfx8S/ZYgpAlj/AZbaTtWLitMgNQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      globby: 11.1.0
+      graphql: 16.8.0
+      tslib: 2.6.2
+      unixify: 1.0.0
     dev: false
 
   /@graphql-tools/load@8.0.0(graphql@16.8.0):
