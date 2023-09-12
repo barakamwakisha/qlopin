@@ -1,0 +1,8 @@
+enum ErrorCode {
+    UNKNOWN_ERROR
+}
+
+interface ErrorResult {
+    errorCode: ErrorCode!
+    message: String!
+}
