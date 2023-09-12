@@ -1,11 +1,14 @@
 {
   "name": "@barakamwakisha/qlopin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "An opinionated GraphQL utility package that hastens development, putting conventions over code and reducing boilerplate.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "ci": "pnpm lint && pnpm test && pnpm build",
     "build": "tsup src/index.ts",
