@@ -1,5 +1,11 @@
 # @barakamwakisha/qlopin
 
+## 0.3.0
+
+### Minor Changes
+
+- 0f377e2: Refactory api to accept typedefs string or glob path to files with type definitions
+
 ## 0.2.1
 
 ### Patch Changes
