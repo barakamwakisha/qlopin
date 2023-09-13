@@ -1,4 +1,4 @@
-import { printType, printSchema, GraphQLNamedType, GraphQLInputType } from 'graphql';
+import { printType } from 'graphql';
 import { buildQlopinSchema } from './index';
 import { describe, expect, it } from 'vitest';
 
